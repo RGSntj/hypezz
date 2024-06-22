@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.section-container .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+.single-pro-image > img {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.small-img-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+}
+
+.small-img-group img {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.small-img-icon {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-image > h6 {
+  font: 400 14px "Oswald";
+  padding: 10px 0 20px 0;
+}
+
+#prodetails .single-pro-image > h6 a {
+  font: 400 14px "Oswald";
+  color: #000000;
+  /* padding: 10px 0 20px 0; */
+  transition: all 0.4s;
+}
+
+#prodetails .single-pro-image > h6 a:hover {
+  opacity: 0.6;
+}
+
+#prodetails .single-pro-details h4 {
+  font: 400 23px "Oswald";
+  padding: 20px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+  font: 500 22px "Oswald";
+}
+
+#prodetails .single-pro-details p {
+  font: 400 15px "Roboto";
+}
+
+#prodetails .single-pro-details .container-sizes {
+  display: flex;
+  gap: 10px;
+  padding: 30px 0 20px 0;
+}
+
+#prodetails .single-pro-details .container-sizes li {
+  min-width: 36px;
+  min-height: 36px;
+  /* border-radius: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  transition: all 0.43s;
+  /* opacity: 0.5; */
+}
+
+#prodetails .single-pro-details .container-sizes li.active {
+  background-color: #0db984;
+}
+
+#prodetails .single-pro-details .container-sizes li.active a {
+  color: #ffffff;
+}
+
+#prodetails .single-pro-details .container-sizes li a {
+  /* color: white; */
+  color: #131313;
+  font: 400 15px "Oswald";
+}
+
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-family: "Oswald";
+}
+
+#prodetails .single-pro-details input:focus {
+  background-color: #f1f1f1;
+}
+
+#prodetails .single-pro-details > a {
+  padding: 10px 100px;
+  background-color: #131313;
+  color: white;
+  font: 400 16px "Roboto";
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#prodetails .single-pro-details > a.disabled {
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+#prodetails .single-pro-details > a i {
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details span {
+  /* line-height: 50px; */
+  letter-spacing: 1px;
+  font: 400 14px "Inter";
+  /* color: #808080; */
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sufgang - Arabic Joker Black</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="details.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">Hype<span>zz</span></a>
+
+      <nav class="nav-menu">
+        <li><a href="#">páginas</a></li>
+        <li>
+          <a href="#">marcas <i class="bx bx-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Puma</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="sufgang">sufgang</a></li>
+        <li>
+          <a href="#">camisetas <i class="bx bx-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="">Básicas</a></li>
+            <li><a href="">Especiais</a></li>
+            <li><a href="">Manga Longa</a></li>
+          </ul>
+        </li>
+        <li><a href="#">outras categorias</a></li>
+      </nav>
+
+      <div class="nav-menu-mobile">
+        <div class="close-menu-mobile">
+          <a href="" id="close-menu-icon">
+            <i class="bx bx-x"></i>
+          </a>
+        </div>
+        <nav class="container">
+          <ul>
+            <li><a href="#">páginas</a></li>
+            <li>
+              <div class="categoria-pagina com-filho">
+                <a href="#">marcas</a>
+                <a href="" class="sub-menu-icon">&#8628;</a>
+              </div>
+              <ul class="dropdown">
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+              </ul>
+            </li>
+            <li><a href="#" id="sufgang">sufgang</a></li>
+            <li>
+              <div class="categoria-pagina com-filho">
+                <a href="#">camisetas</a>
+                <a href="" class="sub-menu-icon">&#8628;</a>
+              </div>
+              <ul class="dropdown">
+                <li><a href="">Básicas</a></li>
+                <li><a href="">Especiais</a></li>
+                <li><a href="">Manga Longa</a></li>
+              </ul>
+            </li>
+            <li><a href="#">outras categorias</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-icon">
+        <div class="menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <i class="bx bx-user"></i>
+        <i class="bx bx-cart" id="cart-icon"></i>
+      </div>
+    </header>
+
+    <div class="cart">
+      <!-- Close cart button -->
+      <i class="bx bx-x" id="close-cart"></i>
+      <h2 class="cart-title">Seu carrinho</h2>
+      <!-- <hr /> -->
+      <div class="cart-content">
+        <p class="info">
+          <i class="bx bx-info-circle"></i> O carrinho de compras está vazio.
+        </p>
+      </div>
+
+      <a href="" class="buy-btn disabled">Encerrar compra</a>
+    </div>
+
+    <section id="prodetails" class="section-container">
+      <div class="single-pro-image">
+        <h6><a href="/">ínicio</a> > SUFGANG</h6>
+
+        <img
+          src="./camiseta-preta-2.png"
+          width="100%"
+          alt="Black Shoe"
+          id="zoom-image"
+        />
+
+        <div class="small-img-group">
+          <div class="small-img-icon">
+            <img
+              src="./camiseta-preta-2.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-icon">
+            <img
+              src="./camiseta-preta-2.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-icon">
+            <img
+              src="./camiseta-preta-2.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-icon">
+            <img
+              src="./camiseta-preta-2.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <!-- <h6>ínicio > SUFGANG</h6> -->
+        <h4>Sufgang - Arabic Joker Black</h4>
+        <p>Selecione a opção de tamanho:</p>
+        <ul id="sizes" class="container-sizes">
+          <li class="active"><a href="">P</a></li>
+          <li><a href="">M</a></li>
+          <li><a href="">G</a></li>
+          <li><a href="">GG</a></li>
+        </ul>
+        <span id="size-not-found" style="color: #e63946; display: none"
+          ><i class="bx bx-info-circle"></i> Tamanho Indisponível</span
+        >
+        <h2>R$ 189,99</h2>
+        <input type="number" value="1" min="1" />
+        <a id="btn-buy">Comprar</a>
+        <h4>Detalhes do produto</h4>
+        <span
+          >A camiseta "Sufgang - Arabic Joker Black" é uma peça única que
+          combina estilo, conforto e uma atitude ousada. Inspirada pelo
+          enigmático personagem do Coringa e pela rica cultura árabe, esta
+          camiseta preta é perfeita para quem deseja se destacar e fazer uma
+          declaração de moda audaciosa. O destaque desta camiseta é a estampa
+          frontal do "Arabic Joker", que apresenta uma interpretação artística
+          do Coringa, fundindo elementos tradicionais árabes com a icônica
+          imagem do personagem. Confeccionada com 100% algodão penteado, oferece
+          um toque suave e máximo conforto. A camiseta é leve, respirável e
+          possui costuras reforçadas para durabilidade extra, assegurando que
+          esta peça se mantenha impecável mesmo após várias lavagens. Com um
+          corte moderno e ajustado, ela complementa qualquer tipo de corpo,
+          disponível em tamanhos P, M, G, GG. Versátil, pode ser combinada com
+          jeans, calças de moletom ou uma jaqueta de couro para um visual mais
+          ousado, perfeita para um passeio casual, uma noite com amigos ou um
+          evento especial. Adicione a "Sufgang - Arabic Joker Black" ao seu
+          guarda-roupa e transforme seu visual com um toque de mistério e
+          cultura, pois esta camiseta não é apenas uma peça de roupa, mas uma
+          expressão de identidade e estilo.
+        </span>
+      </div>
+    </section>
+
+    <script>
+      const sizes = document.querySelectorAll("#sizes li");
+      const notSizeMsg = document.getElementById("size-not-found");
+      const btnBuy = document.getElementById("btn-buy");
+
+      // console.log(sizes);
+
+      sizes.forEach((size) => {
+        size.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          if (size.children[0].innerHTML == "M") {
+            notSizeMsg.style.display = "block";
+            btnBuy.classList.add("disabled");
+          } else {
+            notSizeMsg.style.display = "none";
+            btnBuy.classList.remove("disabled");
+          }
+
+          sizes.forEach((s) => s.classList.remove("active"));
+
+          size.classList.add("active");
+        });
+      });
+
+      let cartIcon = document.getElementById("cart-icon");
+      let closeCartIcon = document.getElementById("close-cart");
+      let cart = document.querySelector(".cart");
+
+      cartIcon.addEventListener("click", () => {
+        cart.classList.add("ativo");
+      });
+
+      closeCartIcon.addEventListener("click", () => {
+        cart.classList.remove("ativo");
+      });
+    </script>
+  </body>
+</html>

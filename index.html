@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meu Hypezz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">Hype<span>zz</span></a>
+
+      <nav class="nav-menu">
+        <li><a href="#">páginas</a></li>
+        <li>
+          <a href="#">marcas <i class="bx bx-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Puma</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="sufgang">sufgang</a></li>
+        <li>
+          <a href="#">camisetas <i class="bx bx-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="">Básicas</a></li>
+            <li><a href="">Especiais</a></li>
+            <li><a href="">Manga Longa</a></li>
+          </ul>
+        </li>
+        <li><a href="#">outras categorias</a></li>
+      </nav>
+
+      <div class="nav-menu-mobile">
+        <div class="close-menu-mobile">
+          <a href="" id="close-menu-icon">
+            <i class="bx bx-x"></i>
+          </a>
+        </div>
+        <nav class="container">
+          <ul>
+            <li><a href="#">páginas</a></li>
+            <li>
+              <div class="categoria-pagina com-filho">
+                <a href="#">marcas</a>
+                <a href="" class="sub-menu-icon">&#8628;</a>
+              </div>
+              <ul class="dropdown">
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+              </ul>
+            </li>
+            <li><a href="#" id="sufgang">sufgang</a></li>
+            <li>
+              <div class="categoria-pagina com-filho">
+                <a href="#">camisetas</a>
+                <a href="" class="sub-menu-icon">&#8628;</a>
+              </div>
+              <ul class="dropdown">
+                <li><a href="">Básicas</a></li>
+                <li><a href="">Especiais</a></li>
+                <li><a href="">Manga Longa</a></li>
+              </ul>
+            </li>
+            <li><a href="#">outras categorias</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-icon">
+        <div class="menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <i class="bx bx-user"></i>
+        <i class="bx bx-cart" id="cart-icon"></i>
+      </div>
+    </header>
+
+    <div class="cart">
+      <!-- Close cart button -->
+      <i class="bx bx-x" id="close-cart"></i>
+      <h2 class="cart-title">Seu carrinho</h2>
+      <!-- <hr /> -->
+      <div class="cart-content">
+        <p class="info">
+          <i class="bx bx-info-circle"></i> Seu carrinho está vazio.
+        </p>
+      </div>
+
+      <a href="" class="buy-btn disabled">Encerrar compra</a>
+    </div>
+
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio-01" />
+        <input type="radio" name="btn-radio" id="radio-02" />
+        <input type="radio" name="btn-radio" id="radio-03" />
+        <!-- <input type="radio" name="btn-radio" id="radio-04" /> -->
+
+        <div class="slide-box first">
+          <img
+            src="https://cdn.awsli.com.br/1920x1920/2491/2491815/banner/real-source-3-min-bqonkl.png"
+            alt="slide-1"
+            width="100%"
+          />
+        </div>
+        <div class="slide-box">
+          <img
+            src="https://cdn.awsli.com.br/1920x1920/2491/2491815/banner/real-source-1--rpxoep5v9s.png"
+            alt="slide-1"
+            width="100%"
+          />
+        </div>
+        <div class="slide-box">
+          <img
+            src="https://cdn.awsli.com.br/1920x1920/2491/2491815/banner/img_1621-3io6zy9ktk.jpeg"
+            alt="slide-1"
+            width="100%"
+          />
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn-1"></div>
+          <div class="auto-btn-2"></div>
+          <div class="auto-btn-3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio-01" class="manual-btn"></label>
+          <label for="radio-02" class="manual-btn"></label>
+          <label for="radio-03" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <h1 style="font-family: Oswald; font-weight: 400; letter-spacing: 3px">
+        Mais vendidos
+      </h1>
+
+      <div class="sales-container">
+        <a href="/details.html">
+          <div class="card-sale">
+            <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
+            <div class="card-sale-content">
+              <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
+              <strong class="price">R$ 199,99</strong>
+              <p>até 4x de R$ 49,99 sem juros</p>
+            </div>
+          </div>
+        </a>
+        <div class="card-sale">
+          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
+          <div class="card-sale-content">
+            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
+            <strong class="price">R$ 199,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+        <div class="card-sale">
+          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
+          <div class="card-sale-content">
+            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
+            <strong class="price">R$ 199,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+        <div class="card-sale">
+          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
+          <div class="card-sale-content">
+            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
+            <strong class="price">R$ 199,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <h1 style="font-family: Oswald; font-weight: 400; letter-spacing: 3px">
+        Calças
+      </h1>
+
+      <div class="sales-container">
+        <a href="/details.html">
+          <div class="card-sale">
+            <img
+              src="https://cdn.awsli.com.br/600x700/2455/2455380/produto/226344714/img_0892-fd95rwkawi.jpeg"
+              alt="Calça jeans balao"
+            />
+            <div class="card-sale-content">
+              <h3>Calça Jeans Balão</h3>
+              <strong class="price">R$ 119,99</strong>
+              <p>até 4x de R$ 49,99 sem juros</p>
+            </div>
+          </div>
+        </a>
+        <div class="card-sale">
+          <img
+            src="https://cdn.awsli.com.br/600x700/2455/2455380/produto/226344714/img_0892-fd95rwkawi.jpeg"
+            alt="Calça jeans balao"
+          />
+          <div class="card-sale-content">
+            <h3>Calça Jeans Balão</h3>
+            <strong class="price">R$ 119,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+        <div class="card-sale">
+          <img
+            src="https://cdn.awsli.com.br/600x700/2455/2455380/produto/226344714/img_0892-fd95rwkawi.jpeg"
+            alt="Calça jeans balao"
+          />
+          <div class="card-sale-content">
+            <h3>Calça Jeans Balão</h3>
+            <strong class="price">R$ 119,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+        <div class="card-sale">
+          <img
+            src="https://cdn.awsli.com.br/600x700/2455/2455380/produto/226344714/img_0892-fd95rwkawi.jpeg"
+            alt="Calça jeans balao"
+          />
+          <div class="card-sale-content">
+            <h3>Calça Jeans Balão</h3>
+            <strong class="price">R$ 119,99</strong>
+            <p>até 4x de R$ 49,99 sem juros</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" style="background-color: #f1f1f1">
+      <div
+        class="container"
+        style="display: flex; gap: 15px; align-items: center"
+      >
+        <p style="font-family: Roboto; color: #808080">
+          Cadastre-se e receba <br />
+          nossas novidades
+        </p>
+        <input
+          type="text"
+          style="
+            padding: 15px 15px;
+            width: 300px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-family: Roboto;
+            font-size: 14px;
+          "
+          placeholder="Digite seu email"
+          type="email"
+          required
+        />
+        <a
+          href=""
+          style="
+            background-color: #5f6368;
+            padding: 15px 20px;
+            color: #ffffff;
+            border-radius: 5px !important;
+            font-family: Roboto;
+            font-size: 14px;
+          "
+          >Assinar</a
+        >
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+/* section responsive */
+
+@media (max-width: 780px) {
+  .sales-container {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
