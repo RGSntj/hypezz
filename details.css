@@ -158,4 +158,10 @@
     width: auto;
     margin: 0;
   }
+
+  #prodetails .single-pro-details #btn-buy {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
