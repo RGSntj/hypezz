@@ -143,3 +143,19 @@
   font: 400 14px "Inter";
   /* color: #808080; */
 }
+
+@media (max-width: 780px) {
+  #prodetails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #prodetails .single-pro-details {
+    width: auto;
+  }
+
+  #prodetails .single-pro-image {
+    width: auto;
+    margin: 0;
+  }
+}
