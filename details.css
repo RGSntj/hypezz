@@ -100,34 +100,61 @@
   font: 400 15px "Oswald";
 }
 
-#prodetails .single-pro-details input {
-  width: 50px;
-  height: 47px;
-  padding-left: 10px;
-  font-size: 16px;
-  margin-right: 10px;
+#prodetails .single-pro-details .qtd-cart-container {
+  border: 1px solid #5f6368;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#prodetails .single-pro-details .qtd-cart-container i {
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: all 0.42s;
+  color: #5f6368;
+  /* background-color: #f1f1f1; */
+}
+
+#prodetails .single-pro-details .buy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#prodetails .single-pro-details .qtd-cart-container input {
+  height: 30px;
+  width: 35px;
   outline: none;
   border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
+  font-size: 17px;
   font-family: "Oswald";
+  text-align: center;
+  color: #5f6368;
+  pointer-events: none;
+  padding: 0;
 }
 
 #prodetails .single-pro-details input:focus {
   background-color: #f1f1f1;
 }
 
-#prodetails .single-pro-details > a {
-  padding: 10px 100px;
+#prodetails .single-pro-details .buy-container > a {
+  padding: 10px;
+  width: 350px;
   background-color: #131313;
   color: white;
+  text-align: center;
   font: 400 16px "Roboto";
   border-radius: 3px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
-#prodetails .single-pro-details > a.disabled {
+#prodetails .single-pro-details .buy-container > a.disabled {
   color: white;
   cursor: not-allowed;
   opacity: 0.3;
@@ -159,9 +186,14 @@
     margin: 0;
   }
 
-  #prodetails .single-pro-details #btn-buy {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
+  #prodetails .single-pro-details .buy-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  #prodetails .single-pro-details .buy-container .qtd-cart-container {
+    margin: 0;
+  }
+  #prodetails .single-pro-details .buy-container .qtd-cart-container #btn-buy {
+    width: 100%;
   }
 }
