@@ -4,4 +4,21 @@
   .sales-container {
     grid-template-columns: repeat(2, 150px);
   }
+
+  .section-container.newsletter .container {
+    flex-direction: column;
+  }
+
+  .section-container.newsletter .container input,
+  .section-container.newsletter .container p {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .section-container.newsletter .container a {
+    width: 100%;
+    padding: 15px 0;
+    max-width: 300px;
+    text-align: center;
+  }
 }

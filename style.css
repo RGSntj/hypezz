@@ -367,3 +367,35 @@ header .nav-icon i#cart-icon::after {
   font-size: 25px;
   color: black;
 }
+
+/* newsletter styles */
+.section-container.newsletter .container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.section-container.newsletter .container p {
+  font-family: "Roboto";
+  color: #808080;
+  max-width: 150px;
+}
+
+.section-container.newsletter .container input {
+  padding: 15px 15px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.section-container.newsletter .container a {
+  background-color: #5f6368;
+  padding: 15px 20px;
+  color: #ffffff;
+  border-radius: 5px !important;
+  font-family: Roboto;
+  font-size: 14px;
+}
