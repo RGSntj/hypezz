@@ -326,8 +326,8 @@ header .nav-icon i#cart-icon::after {
 }
 
 .nav-menu-mobile ul li .dropdown li a {
-  font: 400 13px "Roboto";
-  display: block;
+  font: 500 14px "Inter";
+  /* display: block; */
   /* position: absolute; */
 }
 

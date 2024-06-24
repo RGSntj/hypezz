@@ -50,10 +50,16 @@ closeIcon.addEventListener("click", (e) => {
 })
 
 // sub-menu logic
-subMenu.forEach((menu) => {
-  menu.addEventListener("click", (event) => {
-    event.preventDefault();
+const dropdownShoes = document.getElementById("dropdown-shoes");
 
-    dropdown.classList.toggle("ativo");
-  })
+subMenu[0].addEventListener("click", (ev) => {
+  ev.preventDefault();
+
+  dropdown.classList.toggle("ativo")
+})
+
+subMenu[1].addEventListener("click", (ev) => {
+  ev.preventDefault();
+
+  dropdownShoes.classList.toggle("ativo")
 })
