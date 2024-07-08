@@ -13,13 +13,17 @@ function addDataToHTML() {
       newProduct.classList.add("card-sale");
       newProduct.dataset.id = product.id;
       newProduct.innerHTML = `
-            <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
+           
+              <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
               <div class="card-sale-content">
                 <h3>${product.name}</h3>
                 <strong class="price">R$ ${product.price.toFixed(2)}</strong>
                 <p>até 4x de R$ 49,99 sem juros</p>
               </div>
-              <button class="addCart">Carrinho</button>
+              <button class="addCart">
+                <i class='bx bx-cart-add'></i>
+              </button>
+            
       `;
 
       salesContainer.appendChild(newProduct);
@@ -87,10 +91,10 @@ function addCartToHTML() {
   }
 };
 
-// ESSA LOGICA AQUI TA ERRADA DMS MANO
+// arrumar essa logica
 function removeItemToCart(productId) {
   let product = carts.findIndex((value) => value.product_id == productId)
-  console.log(carts[product]);
+  carts.splice(carts[product], 1);
   addCartToHTML();
 }
 
