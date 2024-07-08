@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body {
+  height: 100dvh;
   transition: all 0.4s;
 }
 
@@ -149,7 +150,50 @@ header .nav-icon i#cart-icon::after {
   margin-top: 0.5rem;
 }
 
-.cart .cart-content .info {
+.cart .cart-content .item {
+  padding: 10px 5px;
+  display: flex;
+  gap: 10px;
+  font-family: Inter;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cart .cart-content .item .item-info {
+  width: 100%;
+}
+
+.cart .cart-content .item img {
+  background-color: #f1f1f1;
+  /* padding: 5px; */
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.cart .cart-content .item .item-info h2 {
+  font: 500 14px "Oswald";
+}
+
+.cart .cart-content .item .item-info p {
+  font: 400 13px "Roboto";
+}
+
+.cart .cart-content .item .item-info .informations {
+  margin-top: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart .cart-content .item .item-info .informations .icon-actions i {
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.cart #info_msg {
   font: 200 12px "Inter";
   color: #3d9ccc;
   border: 1px solid #3d9ccc;

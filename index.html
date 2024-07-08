@@ -96,10 +96,26 @@
       <i class="bx bx-x" id="close-cart"></i>
       <h2 class="cart-title">Seu carrinho</h2>
       <!-- <hr /> -->
+      <p id="info_msg" class="info">
+        <i class="bx bx-info-circle"></i> Seu carrinho está vazio.
+      </p>
       <div class="cart-content">
-        <p class="info">
-          <i class="bx bx-info-circle"></i> Seu carrinho está vazio.
-        </p>
+        <!-- <div class="item">
+          <img src="./camiseta-preta-2.png" width="70px" alt="" />
+
+          <div class="item-info">
+            <h2>Sufgang - Arabic black</h2>
+            <p>Camiseta</p>
+
+            <div class="informations">
+              <a href="">quant.</a>
+
+              <div class="icon-actions">
+                <i class="bx bx-trash"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
 
       <a href="" class="buy-btn disabled">Encerrar compra</a>
@@ -162,32 +178,9 @@
               <strong class="price">R$ 199,99</strong>
               <p>até 4x de R$ 49,99 sem juros</p>
             </div>
+            <button onclick="addcart">Carrinho</button>
           </div>
         </a>
-        <div class="card-sale">
-          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
-          <div class="card-sale-content">
-            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
-            <strong class="price">R$ 199,99</strong>
-            <p>até 4x de R$ 49,99 sem juros</p>
-          </div>
-        </div>
-        <div class="card-sale">
-          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
-          <div class="card-sale-content">
-            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
-            <strong class="price">R$ 199,99</strong>
-            <p>até 4x de R$ 49,99 sem juros</p>
-          </div>
-        </div>
-        <div class="card-sale">
-          <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
-          <div class="card-sale-content">
-            <h3>Sufgang - Arabic Joker 2.0 Tee Black</h3>
-            <strong class="price">R$ 199,99</strong>
-            <p>até 4x de R$ 49,99 sem juros</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -263,5 +256,6 @@
     </section>
 
     <script src="./script.js"></script>
+    <script src="./cart.js" defer></script>
   </body>
 </html>

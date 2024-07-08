@@ -1,9 +1,9 @@
-let radio = document.querySelector(".manual-btn");
-let menuIcon = document.querySelector(".menu");
-let navMobile = document.querySelector(".nav-menu-mobile");
-let subMenu = document.querySelectorAll(".sub-menu-icon");
-let dropdown = document.querySelector(".nav-menu-mobile .dropdown");
-let closeIcon = document.querySelector("#close-menu-icon");
+const radio = document.querySelector(".manual-btn");
+const menuIcon = document.querySelector(".menu");
+const navMobile = document.querySelector(".nav-menu-mobile");
+const subMenu = document.querySelectorAll(".sub-menu-icon");
+const dropdown = document.querySelector(".nav-menu-mobile .dropdown");
+const closeIcon = document.querySelector("#close-menu-icon");
 
 document.getElementById("radio-01").checked = true;
 
@@ -24,9 +24,9 @@ setInterval(() => {
 }, 3000)
 
 // Cart logic
-let cartIcon = document.getElementById("cart-icon");
-let closeCartIcon = document.getElementById("close-cart");
-let cart = document.querySelector(".cart");
+const cartIcon = document.getElementById("cart-icon");
+const closeCartIcon = document.getElementById("close-cart");
+const cart = document.querySelector(".cart");
 
 cartIcon.addEventListener("click", () => {
   cart.classList.add("ativo");
@@ -52,6 +52,7 @@ closeIcon.addEventListener("click", (e) => {
 // sub-menu logic
 const dropdownShoes = document.getElementById("dropdown-shoes");
 
+// arrumar isso aq dps, q treco horrivel !!
 subMenu[0].addEventListener("click", (ev) => {
   ev.preventDefault();
 
@@ -63,3 +64,4 @@ subMenu[1].addEventListener("click", (ev) => {
 
   dropdownShoes.classList.toggle("ativo")
 })
+
