@@ -4,6 +4,10 @@ let carts = [];
 const salesContainer = document.querySelector(".sales-container");
 const cartContentHTML = document.querySelector(".cart .cart-content");
 
+function formatMoney(price) {
+  return price.replace(".", ",")
+}
+
 function addDataToHTML() {
   salesContainer.innerHTML = "";
 
@@ -17,12 +21,16 @@ function addDataToHTML() {
               <img src="./camiseta-preta-2.png" alt="Camiseta preta sem fundo" />
               <div class="card-sale-content">
                 <h3>${product.name}</h3>
-                <strong class="price">R$ ${product.price.toFixed(2)}</strong>
+                <strong class="price">R$ ${formatMoney(product.price.toFixed(2))}</strong>
                 <p>até 4x de R$ 49,99 sem juros</p>
               </div>
               <button class="addCart">
                 <i class='bx bx-cart-add'></i>
               </button>
+
+              <div class="about">
+                <a href="/details.html" >Comprar</a>
+              </div>
             
       `;
 
@@ -58,7 +66,7 @@ function addCartToHTML() {
   if (carts.length > 0) {
     document.querySelector(".cart .buy-btn").classList.remove("disabled");
 
-    carts.forEach((cart) => {
+    carts.forEach((cart, index) => {
       let newCart = document.createElement("div");
       newCart.classList.add("item");
 
@@ -77,7 +85,7 @@ function addCartToHTML() {
               <p>Quant. ${cart.quantity}</p>
 
               <div class="icon-actions">
-                <i onclick="removeItemToCart(${info.id})" class="bx bx-trash"></i>
+                <i onclick="removeItemToCart(${index})" class="bx bx-trash"></i>
               </div>
             </div>
           </div>
@@ -91,10 +99,14 @@ function addCartToHTML() {
   }
 };
 
-// arrumar essa logica
-function removeItemToCart(productId) {
-  let product = carts.findIndex((value) => value.product_id == productId)
-  carts.splice(carts[product], 1);
+function addTotalPriceToCart(price) {
+  let subtotal = document.getElementById("price");
+
+  subtotal.innerHTML = `R$ ${formatMoney(price.toFixed(2))}`;
+}
+
+function removeItemToCart(index) {
+  carts.splice(index, 1);
   addCartToHTML();
 }
 

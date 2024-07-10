@@ -201,16 +201,36 @@ header .nav-icon i#cart-icon::after {
   padding: 8px;
 }
 
-.cart .buy-btn {
-  background-color: #0db984;
-  text-align: center;
-  font: 400 18px "Oswald";
-  color: #ffffff;
-  padding: 6px 0;
-  border-radius: 5px;
+.cart .cart-content-end {
+  border-top: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.cart .buy-btn.disabled {
+.cart .cart-content-end .content-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font: 400 18px "Oswald";
+}
+
+.cart .cart-content-end .content-price p {
+  font-size: 20px;
+}
+
+.cart .cart-content-end .buy-btn {
+  background-color: #0db984;
+  text-align: center;
+  font: 400 16px "Oswald";
+  color: #ffffff;
+  padding: 6px 0;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.cart .cart-content-end .buy-btn.disabled {
   background-color: #202124;
   cursor: not-allowed;
   opacity: 0.5;
@@ -260,18 +280,20 @@ header .nav-icon i#cart-icon::after {
   /* min-height: 350px; */
   /* box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1); */
   position: relative;
+  overflow: hidden;
 }
 
 .sales-container .card-sale .addCart {
   padding: 10px;
-  background-color: #88f7b2;
+  background-color: #0db984;
+  /* background-color: rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
   border: none;
   outline: none;
   position: absolute;
   top: 2%;
   right: 5%;
-  box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   /* z-index: 2; */
   display: none;
@@ -284,6 +306,41 @@ header .nav-icon i#cart-icon::after {
 .sales-container .card-sale .addCart i {
   font-size: 20px;
   color: #000000;
+  /* color: white; */
+}
+
+.sales-container .card-sale .about {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  /* background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.2)
+  ); */
+  height: 50%;
+  backdrop-filter: blur(1px) saturate(180%);
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: end;
+  transition: all 0.2s;
+  padding: 0 20px;
+}
+
+.sales-container .card-sale:hover .about {
+  bottom: 10px;
+}
+
+.sales-container .card-sale .about a {
+  padding: 10px;
+  background-color: #0db984;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  font: 400 16px "Oswald";
+  color: white;
+  text-transform: uppercase;
 }
 
 .sales-container .card-sale img {
